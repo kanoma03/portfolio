@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>茶碗</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body id="top">
+      
+        <!--ここからヘッダー-->
+        <header>
+          <h1><a href="index.html"><img src="images/title.jpg" alt="Title"></a></h1>
+            <nav id="global_navi">
+               <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="current"><a href="viewall.html">ITEM</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                <!--</ul>-->
+                <!--<ul class="login">-->
+                    <!--<li><a href="#">LOG IN</a></li>-->
+                    <!--<li><a href="#">CART</a></li>-->
+                </ul>
+            </nav>
+          
+          <!--ハンバーガーメニュー-->
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="globalMenuSp">
+              <ul>
+                  <li><a href="viewall.html">すべての商品</a></li>
+                  <li><a href="viewshokki.html">食器</a></li>
+                  <li><a href="viewchawan.html">茶碗</a></li>
+                  <li><a href="viewchuzara.html">中皿</a></li>
+                  <li><a href="viewmamezara.html">豆皿</a></li>
+                  <li><a href="viewchaki.html">茶器</a></li>
+                  <li><a href="viewkyusu.html">急須</a></li>
+                  <li><a href="viewglass.html">グラス</a></li>
+                  <li><a href="viewzakka.html">雑貨</a></li>
+              </ul>
+          </nav>
+          <!--ハンバーガーメニューここまで-->
+            
+        </header>
+        <!--ヘッダーここまで-->
+        
+
+        <!--ここからメインビジュアル画像-->
+        <div id="main">
+        　<h2>ITEM</h2>
+        </div>
+        <!--wrapperー-->
+        <div id="wrapper">
+            <!--ここからメイン-->
+            <div id="itemall">
+              <section id="itemlist"
+                v-for="item in getChuzara()"
+                v-bind:key="item.id"
+              >
+                    <section id="all">
+                      <a :href="item.link">
+                        <!--<img :src="item.thumb" alt="item" v-if="item.sub === '陶器'">-->
+                        <img :src="item.thumb" alt="item">
+                      </a>
+                    </section>
+                    
+      
+                    <!--<section id="all1">-->
+                    <!--  <a href="item1.html"><img src="images/item1.jpg" alt="item1"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all2">-->
+                    <!--  <a href="#"><img src="images/item2.jpg" alt="item2"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all3">-->
+                    <!--  <a href="#"><img src="images/item3.jpg" alt="item3"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all4">-->
+                    <!--  <a href="#"><img src="images/item4.jpg" alt="item4"></a>-->
+                    <!--</section>-->
+                    
+                    <!--<section id="all1">-->
+                    <!--  <a href="item1.html"><img src="images/item1.jpg" alt="item1"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all2">-->
+                    <!--  <a href="#"><img src="images/item2.jpg" alt="item2"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all3">-->
+                    <!--  <a href="#"><img src="images/item3.jpg" alt="item3"></a>-->
+                    <!--</section>-->
+                    <!--<section id="all4">-->
+                    <!--  <a href="#"><img src="images/item4.jpg" alt="item4"></a>-->
+                    <!--</section>-->
+                  
+              </section>    
+            </div>  
+            <!--メインここまで-->
+        </div>
+        <!--wrapperここまで-->
+        
+        <br>
+        
+        <small> © CHITOSE LTD.</small>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/list.js"></script>
+        <script src="js/hamburger.js"></script>
+        
+    </body>
+</html>

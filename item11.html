@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>item11</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--ここからヘッダー-->
+        <header>
+          <h1><a href="index.html"><img src="images/title.jpg" alt="Title"></a></h1>
+            <nav id="global_navi">
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="viewall.html">ITEM</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                <!--</ul>-->
+                <!--<ul class="login">-->
+                    <!--<li><a href="#">LOG IN</a></li>-->
+                    <!--<li><a href="#">CART</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <!--ヘッダーここまで-->
+        
+        <!--main-->
+        <main>
+           <div id="item" class="wrapper">
+            <div class="item-image">
+                  <!--ここからメインビジュアル画像-->
+                  
+                  <div class="disp">
+                    <ul class="mainshosai">
+                      <li><a class="popup" href="images/img/item11shosai1.jpg"><img src="images/img/item11shosai1.jpg" alt="shosai1"></a></li>
+                      <li><a class="popup" href="images/img/item11shosai2.jpg"><img src="images/img/item11shosai2.jpg" alt="shosai2"></a></li>
+                      <li><a class="popup" href="images/img/item11shosai3.jpg"><img src="images/img/item11shosai3.jpg" alt="shosai3"></a></li>
+                      <li><a class="popup" href="images/img/item11shosai4.jpg"><img src="images/img/item11shosai4.jpg" alt="shosai4"></a></li>
+                    </ul>
+          
+                  </div>
+                  <div class="disp">
+                    <ul class="slidershosai">
+                      <li><img src="images/img/item11shosai1.jpg" alt="shosai1"></li>
+                      <li><img src="images/img/item11shosai2.jpg" alt="shosai2"></li>
+                      <li><img src="images/img/item11shosai3.jpg" alt="shosai3"></li>
+                      <li><img src="images/img/item11shosai4.jpg" alt="shosai4"></li>
+                    </ul>
+                  </div>
+            <!--メインビジュアル画像ここまで-->
+
+            </div>
+            
+
+    
+            <div class="item-info">
+              
+              <h1 class="item-title">ITEM NAME</h1>
+              <p>
+                テキスト
+                <br>
+                <br>
+              </p>
+    
+              <p>￥9,999 +tax</p>
+    
+              <table class="order-table">
+                <thead>
+                  <tr>
+                    <th class="color">Color</th>
+                    <th class="size">Size</th>
+                    <th class="quantity">Order</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ONE COLOR</td>
+                    <!--<td>S</td>-->
+                    <td>ONE SIZE</td>
+                    <td>
+                      <select name="quantity_s">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!--<tr>-->
+                  <!--  <td>White</td>-->
+                  <!--  <td>M</td>-->
+                  <!--  <td>-->
+                  <!--    <select name="quantity_m">-->
+                  <!--      <option value="0">0</option>-->
+                  <!--      <option value="1">1</option>-->
+                  <!--    </select>-->
+                  <!--  </td>-->
+                  <!--</tr>-->
+                  <!--<tr>-->
+                  <!--  <td>White</td>-->
+                  <!--  <td>L</td>-->
+                  <!--  <td>-->
+                  <!--    <select name="quantity_l">-->
+                  <!--      <option value="0">0</option>-->
+                  <!--      <option value="1">1</option>-->
+                  <!--    </select>-->
+                  <!--  </td>-->
+                  <!--</tr>-->
+                </tbody>
+              </table>
+              
+              
+    
+              <a class="cart-btn" href="#">カートに入れる</a>
+    
+    
+              <div id="tabmenu">
+                <ul class="tabs-menu">
+                  <li
+                    v-bind:class="{active: activeTab === 'tabs-1'}"
+                    v-on:click="activeTab = 'tabs-1'"
+                  >
+                    SIZE
+                  </li>
+                  <li
+                    v-bind:class="{active: activeTab === 'tabs-2'}"
+                    v-on:click="activeTab = 'tabs-2'"
+                  >
+                    SPEC
+                  </li>
+                </ul>
+                <section class="tabs-content">
+                  <section v-if="activeTab === 'tabs-1'">  
+                    <table class="size-table">
+                      <thead>
+                        <tr>
+                          <th class="size">サイズ</th>
+                          <th class="chest">高さ</th>
+                          <th class="weist">幅</th>
+                          <th class="height">奥行</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <!--<th>S</th>-->
+                          <th>ONE SIZE</th>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                        </tr>
+                        <!--<tr>-->
+                        <!--  <th>M</th>-->
+                        <!--  <td>99</td>-->
+                        <!--  <td>99</td>-->
+                        <!--  <td>99</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--  <th>L</th>-->
+                        <!--  <td>99</td>-->
+                        <!--  <td>99</td>-->
+                        <!--  <td>99</td>-->
+                        <!--</tr>-->
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                  </section>
+                <!--</section>-->
+                
+                <!--<section class="tabs-content">-->
+                  <section v-if="activeTab === 'tabs-2'"> 
+                    <table class="spec-table">
+                      <thead>
+                        <tr>
+                          <th class="komoku">カテゴリ</th>
+                          <th class="text">テキスト</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!--<tr>-->
+                        <!--  <th class="komoku">サイズ展開</th>-->
+                        <!--  <td class="text">テキスト</td>-->
+                        <!--</tr>-->
+                        <tr>
+                          <th class="komoku">素材</th>
+                          <td class="text">テキスト</td>
+                        </tr>
+                        <tr>
+                          <th class="komoku">原産国</th>
+                          <td class="text">テキスト</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </section>  
+              
+              </div>  
+            </div>
+          </div>
+        </main>
+        <!--メインここまで-->
+        
+        <br>
+        
+        <small> © CHITOSE LTD.</small>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/shosai.js"></script>
+    </body>
+</html>
